@@ -7,6 +7,7 @@ public class prefixsubarrsum {
         //calculate prefix of array 
         for(int i = 1; i<prefix.length; i++){
             prefix[i]= prefix[i-1] + numbers[i];
+            System.out.print(prefix[i]+" ");
         }
 
         for(int i = 0; i<numbers.length; i++){
@@ -20,10 +21,12 @@ public class prefixsubarrsum {
             }
             }
         }
+        
         System.out.println("max sum = "+MaxSum);
+        
     }
     public static void main(String[] args) {
-        int numbers[] = {1, -2 , 6 , -1 , 3};
+        int numbers[] = {1, -2 , 7 , -1 , 3};
         maxsubarraysum(numbers);
     }
     
